@@ -6,7 +6,7 @@
 use strict;
 
 our $PROGRAM = 'scribus-crop';
-our $VERSION = '0.0';
+our $VERSION = '0.1';
 
 use Getopt::Std;
 use FileHandle;
@@ -22,7 +22,7 @@ use XML::LibXML;
 
 
 # ImageMagick commands
-our $MOGRIFY = "mogrify -quality 95 -crop %dx%d+%d+%d \"%s\"";
+our $MOGRIFY = "magick mogrify -quality 95 -crop %dx%d+%d+%d \"%s\"";
 
 
 
